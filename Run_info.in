@@ -2,12 +2,12 @@
                 Run
 ####################################
 
-CalculatePUSystematics 1
+CalculatePUSystematics 0
 DataHistos PU2016data_15p9ifb.root
 MCHistos PU2016MC.root
 
 isData false
-ApplyGenWeight  0
+ApplyGenWeight  true
 
 ///------Triggers-----///
 
@@ -24,7 +24,7 @@ TreatMuonsAsNeutrinos 0
 ///-----MET cuts------///
 
 DiscrByMet true
-RecoMetCut 180.0 10000.0
+MetCut 180.0 10000.0
 
 DiscrByMHT false
 MhtCut 50.0

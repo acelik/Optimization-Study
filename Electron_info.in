@@ -24,18 +24,19 @@ MotherID 23.
 //---RECO CUTS---///
 
 EtaCut 2.1
-PtCut 10.0 9999.9
+PtCut 10.0 40.0
 
 DoDiscrByIsolation 1
-IsoSumPtCutValue 0.0 0.30
+IsoSumPtCutValue 0.0 0.2
 
-DoDiscrByVetoID 0
-DoDiscrByLooseID 0
-DoDiscrByMediumID 0
+DoDiscrByVetoID false
+DoDiscrByLooseID false
+DoDiscrByMediumID false
 DoDiscrByTightID 0
 DoDiscrByHEEPID 0
 DoDiscrByMVA1ID 1
 DoDiscrByMVA2ID 0
+
 ///---MET TOPOLOGY CUTS---///
 
 DiscrIfIsZdecay 0
@@ -43,8 +44,8 @@ DiscrIfIsZdecay 0
 DiscrByMetDphi 0
 MetDphiCut 1.70 3.15
 
-DiscrByMetMt 0
-MetMtCut 0. 40.
+DiscrByMetMt 1
+MetMtCut 150. 10000.
 
 ////////////////////////////////
              Elec2
@@ -53,17 +54,17 @@ MetMtCut 0. 40.
 //---RECO CUTS---///
 
 EtaCut 2.1
-PtCut 15.0 9999.9
+PtCut 10.0 40.0
 
-DoDiscrByIsolation 0
+DoDiscrByIsolation 1
 IsoSumPtCutValue 0.0 0.2
 
-DoDiscrByVetoID 0
-DoDiscrByLooseID 1
+DoDiscrByVetoID false
+DoDiscrByLooseID false
 DoDiscrByMediumID 0
-DoDiscrByTightID 0
+DoDiscrByTightID false
 DoDiscrByHEEPID 0
-DoDiscrByMVA1ID 0
+DoDiscrByMVA1ID 1
 DoDiscrByMVA2ID 0
 ///---MET TOPOLOGY CUTS---///
 
@@ -72,6 +73,6 @@ DiscrIfIsZdecay 0
 DiscrByMetDphi 0
 MetDphiCut 1.30 3.15
 
-DiscrByMetMt 0
-MetMtCut 10. 100.
+DiscrByMetMt 1
+MetMtCut 150. 10000.
 
